@@ -23,7 +23,7 @@ namespace BuditelIntranet
             if (isMaintenanceMode)
             {
                 context.Response.ContentType = "text/html";
-                await context.Response.SendFileAsync(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "maintenance.html"));
+                await context.Response.SendFileAsync(Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "index.html"));
                 return;
             }
 
